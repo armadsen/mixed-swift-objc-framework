@@ -10,28 +10,25 @@
 
 #import <Foo/Foo.h>
 
-
-
 @interface AppDelegate ()
 
 @end
 
-
-
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Here we can access the classes from Foo and check that they work:
     
-    NSLog(@"AppDelegate");
-    id baz = [[Baz alloc] init];
+    NSLog(@"AppDelegate (Objective-C)");
+    Baz *baz = [[Baz alloc] init];
     NSLog(@"%@", baz);
     [baz doSomething];
 
-    id bar = [[Bar alloc] init];
+    Bar *bar = [[Bar alloc] init];
     NSLog(@"%@", bar);
+    [bar doSomething];
+    NSLog(@"/AppDelegate (Objective-C)\n");
 
     return YES;
 }

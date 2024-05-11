@@ -9,20 +9,18 @@
 import UIKit
 import Foo
 
-
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        println("ViewController")
+        print("ViewController (Swift)")
         let baz = Baz()
-        println("\(baz)")
+        print("\(baz)")
         baz.doSomething()
 
         let bar = Bar()
-        println("\(bar)")
+        print("\(bar)")
+        print("/ViewController (Swift)\n")
     }
 }

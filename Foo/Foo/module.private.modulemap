@@ -1,0 +1,4 @@
+framework module Foo_Private {
+    header "Norf.h"
+    export *
+}

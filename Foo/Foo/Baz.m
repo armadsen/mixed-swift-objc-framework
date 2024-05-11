@@ -7,13 +7,10 @@
 //
 
 #import "Baz.h"
-
 #import "Norf.h"
 
 // It's a bit off, but apparently the only way we can access Swift is through a header that lives inside the framework's public "Headers" directory.
 #import <Foo/Foo-Swift.h>
-
-
 
 @implementation Baz
 
